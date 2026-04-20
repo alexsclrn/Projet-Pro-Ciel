@@ -1,93 +1,79 @@
-# 🐱‍🚀 PRO - Télécommande Arduino
+# PRO - Télécommande Arduino
 
-Un site web de télécommande pour contrôler vos projets Arduino via WiFi. Le système crée son propre réseau WiFi (SSID) auquel vous pouvez vous connecter directement pour commander votre appareil.
+Un site web pour contrôler tes projets Arduino via WiFi. La carte crée son propre réseau WiFi auquel tu peux te connecter directement sans avoir besoin d'Internet.
 
-## 📋 Caractéristiques
+## Caractéristiques
 
-- 🌐 **Interface web intuitive** - Contrôlez votre Arduino depuis n'importe quel navigateur
-- 📡 **Réseau WiFi autonome** - Crée son propre SSID, pas besoin de connexion Internet
-- ⚡ **Communication en temps réel** - Contrôle instantané de vos appareils
-- 📱 **Compatible mobile** - Fonctionne sur smartphone, tablette et ordinateur
-- 🔧 **Facile à configurer** - Configuration simple du WiFi et des commandes
+- Interface web intuitive - contrôle depuis n'importe quel navigateur
+- Réseau WiFi autonome - crée son propre SSID
+- Communication en temps réel
+- Compatible mobile et ordinateur
+- Facile à configurer
 
-## 🚀 Démarrage rapide
+## Installation rapide
 
 ### Prérequis
 
 - Une carte Arduino compatible WiFi (ESP8266, ESP32, etc.)
 - Un navigateur web moderne
-- Les fichiers du projet
 
-### Installation
+### Setup
 
-1. **Cloner le repository**
+1. Clone le repo
    ```bash
    git clone https://github.com/alexsclrn/PRO.git
    cd PRO
    ```
 
-2. **Charger le code Arduino**
-   - Ouvrez l'Arduino IDE
-   - Chargez le sketch Arduino fourni sur votre carte
-   - Configurez les paramètres WiFi (SSID et mot de passe)
+2. Charge le code Arduino
+   - Ouvre l'Arduino IDE
+   - Upload le sketch Arduino sur ta carte
+   - Configure les paramètres WiFi (SSID et mot de passe)
 
-3. **Se connecter**
-   - Connectez-vous au réseau WiFi créé par votre Arduino
-   - Ouvrez votre navigateur et allez à l'adresse fournie (généralement `http://192.168.4.1`)
-   - Vous êtes prêt à contrôler !
+3. Connecte-toi
+   - Connecte-toi au réseau WiFi créé par ton Arduino
+   - Ouvre ton navigateur et va à `http://192.168.4.1`
+   - Prêt à contrôler !
 
-## 📝 Configuration
+## Configuration
 
 ### WiFi
 
-Modifiez les paramètres WiFi dans le sketch Arduino :
-
 ```cpp
-const char* ssid = "PRO";           // Nom du réseau WiFi
-const char* password = "password";   // Mot de passe WiFi
+const char* ssid = "PRO";           // Nom du réseau
+const char* password = "password";   // Mot de passe
 ```
 
-### Commandes
-
-Personnalisez les commandes selon vos besoins en modifiant la partie web et Arduino correspondante.
-
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 PRO/
-├── README.md              # Ce fichier
-├── arduino/               # Code Arduino
-│   └── sketch.ino        # Sketch principal
-├── web/                  # Interface web
-│   ├── index.html        # Page HTML
-│   ├── style.css         # Styles
-│   └── script.js         # Logique JavaScript
-└── docs/                 # Documentation
+├── README.md
+├── arduino/
+│   └── sketch.ino
+├── web/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── docs/
 ```
 
-## 🎮 Utilisation
+## Utilisation
 
-1. Allumez votre Arduino
-2. Attendez que le réseau WiFi apparaisse
-3. Connectez-vous à ce réseau
-4. Accédez à l'interface web
-5. Contrôlez vos appareils !
+1. Allume ton Arduino
+2. Attends que le réseau WiFi apparaisse
+3. Connecte-toi
+4. Accède à l'interface web
+5. Contrôle tes appareils
 
-## 🤝 Contribuer
+## Contribuer
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-- Signaler des bugs
-- Proposer des améliorations
-- Soumettre des pull requests
+Des bugs? Des idées? Ouvre une issue ou envoie une PR.
 
-## 📄 Licence
+## Licence
 
-À définir - Ajoutez votre licence ici
+À définir
 
-## ❓ Support
+## Questions?
 
-Pour toute question ou problème, ouvrez une issue sur le repository.
-
----
-
-Créé avec ❤️ par [@alexsclrn](https://github.com/alexsclrn)
+Ouvre une issue sur le repo.
