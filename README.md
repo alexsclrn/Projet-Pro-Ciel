@@ -44,19 +44,6 @@ const char* ssid = "PRO";           // Nom du réseau
 const char* password = "password";   // Mot de passe
 ```
 
-## Structure du projet
-
-```
-PRO/
-├── README.md
-├── arduino/
-│   └── sketch.ino
-├── web/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-└── docs/
-```
 
 ## Utilisation
 
@@ -65,15 +52,3 @@ PRO/
 3. Connecte-toi
 4. Accède à l'interface web
 5. Contrôle tes appareils
-
-## Contribuer
-
-Des bugs? Des idées? Ouvre une issue ou envoie une PR.
-
-## Licence
-
-À définir
-
-## Questions?
-
-Ouvre une issue sur le repo.
